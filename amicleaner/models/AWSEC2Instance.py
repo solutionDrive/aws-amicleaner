@@ -49,4 +49,3 @@ class AWSEC2Instance(object):
         o.tags = [AWSTag.object_with_json(tag) for tag in json.get('Tags', [])]
 
         return o
-

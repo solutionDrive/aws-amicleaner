@@ -179,4 +179,3 @@ class App(object):
 
             if delete:
                 self.prepare_delete_amis(candidates)
-

@@ -9,6 +9,7 @@ from amicleaner.config import BOTO3_RETRIES
 from ..models import AMI
 from datetime import datetime
 
+
 class AMICleaner(object):
 
     def __init__(self, ec2=None):

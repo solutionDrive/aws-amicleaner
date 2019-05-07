@@ -9,6 +9,7 @@ import argparse
 from prettytable import PrettyTable
 from amicleaner.config import KEEP_PREVIOUS, AMI_MIN_DAYS
 
+
 class Printer(object):
 
     """ Pretty table prints methods """

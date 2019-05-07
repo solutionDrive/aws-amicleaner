@@ -1,6 +1,7 @@
 from builtins import str
 from builtins import object
 
+
 class AWSTag(object):
     def __init__(self):
         self.key = None

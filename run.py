@@ -5,6 +5,7 @@ import sys
 from amicleaner.utils import parse_args
 from amicleaner.cli import App
 
+
 def main():
 
     args = parse_args(sys.argv[1:])
