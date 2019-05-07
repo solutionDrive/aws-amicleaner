@@ -4,6 +4,7 @@
 from __future__ import print_function
 from __future__ import absolute_import
 from builtins import object
+
 import argparse
 from prettytable import PrettyTable
 from amicleaner.config import KEEP_PREVIOUS, AMI_MIN_DAYS
