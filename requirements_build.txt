@@ -2,6 +2,6 @@
 blessings==1.6
 moto
 pep8>=1.7.0
-pytest
+pytest>=3.6
 pytest-pep8
 pytest-cov
