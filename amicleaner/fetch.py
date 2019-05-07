@@ -6,7 +6,7 @@ from builtins import object
 import boto3
 from botocore.config import Config
 from amicleaner.config import BOTO3_RETRIES
-from .models.AMI import AMI
+from .models import AMI
 
 
 class Fetcher(object):

@@ -6,7 +6,7 @@ import boto3
 from botocore.exceptions import ClientError
 from botocore.config import Config
 from amicleaner.config import BOTO3_RETRIES
-from ..models.AMI import AMI
+from ..models import AMI
 from datetime import datetime
 
 class AMICleaner(object):

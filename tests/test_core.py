@@ -3,11 +3,8 @@
 from datetime import datetime
 from moto import mock_ec2
 
-from amicleaner.cleaner.AMICleaner import AMICleaner
-from amicleaner.cleaner.OrphanSnapshotCleaner import OrphanSnapshotCleaner
-from amicleaner.models.AMI import AMI
-from amicleaner.models.AWSTag import AWSTag
-from amicleaner.models.AWSBlockDevice import AWSBlockDevice
+from amicleaner.cleaner import AMICleaner, OrphanSnapshotCleaner
+from amicleaner.models import AMI, AWSTag, AWSBlockDevice
 
 
 def test_map_candidates_with_null_arguments():

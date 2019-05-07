@@ -8,8 +8,7 @@ from builtins import object
 import sys
 
 from amicleaner import __version__
-from .cleaner.AMICleaner import AMICleaner
-from .cleaner.OrphanSnapshotCleaner import OrphanSnapshotCleaner
+from .cleaner import AMICleaner, OrphanSnapshotCleaner
 from .fetch import Fetcher
 from .config import MAPPING_KEY, MAPPING_VALUES, EXCLUDED_MAPPING_VALUES
 from .config import TERM

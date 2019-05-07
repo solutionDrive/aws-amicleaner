@@ -9,8 +9,7 @@ from datetime import datetime
 from amicleaner.cli import App
 from amicleaner.fetch import Fetcher
 from amicleaner.utils import parse_args, Printer
-from amicleaner.models.AMI import AMI
-from amicleaner.models.AWSEC2Instance import AWSEC2Instance
+from amicleaner.models import AMI, AWSEC2Instance
 
 
 @mock_ec2
