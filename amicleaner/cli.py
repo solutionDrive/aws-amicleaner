@@ -8,11 +8,12 @@ from builtins import object
 import sys
 
 from amicleaner import __version__
-from .core import AMICleaner, OrphanSnapshotCleaner
+from .cleaner.AMICleaner import AMICleaner
+from .cleaner.OrphanSnapshotCleaner import OrphanSnapshotCleaner
 from .fetch import Fetcher
-from .resources.config import MAPPING_KEY, MAPPING_VALUES, EXCLUDED_MAPPING_VALUES
-from .resources.config import TERM
-from .utils import Printer, parse_args
+from .config import MAPPING_KEY, MAPPING_VALUES, EXCLUDED_MAPPING_VALUES
+from .config import TERM
+from .utils import Printer
 
 
 class App(object):
@@ -180,20 +181,3 @@ class App(object):
             if delete:
                 self.prepare_delete_amis(candidates)
 
-
-def main():
-
-    args = parse_args(sys.argv[1:])
-    if not args:
-        sys.exit(1)
-
-    app = App(args)
-
-    if app.version is True:
-        app.print_version()
-    else:
-        app.run_cli()
-
-
-if __name__ == "__main__":
-    main()
