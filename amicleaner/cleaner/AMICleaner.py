@@ -22,8 +22,6 @@ class AMICleaner(object):
 
     def remove_amis(self, amis):
 
-        return []
-
         """
         deregister AMIs (array) and removes related snapshots
         :param amis: array of AMI objects

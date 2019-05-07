@@ -65,7 +65,6 @@ class OrphanSnapshotCleaner(object):
 
     def clean(self, snapshots):
 
-        return 0
         """
         actually deletes the snapshots with an array
         of snapshots ids
