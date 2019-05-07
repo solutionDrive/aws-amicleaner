@@ -13,4 +13,4 @@ install:
   - pip install -r requirements_build.txt
 
 script:
-  - py.test -v
+  - BOTO_CONFIG=/dev/null py.test -v
