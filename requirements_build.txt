@@ -1,8 +1,7 @@
 -r requirements.txt
 blessings==1.6
-codecov
 moto
 pep8>=1.7.0
-pytest
+pytest>=3.6
 pytest-pep8
 pytest-cov

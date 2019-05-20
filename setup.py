@@ -4,7 +4,6 @@ from setuptools import setup, find_packages
 from amicleaner import __author__, __author_email__
 from amicleaner import __license__, __version__
 
-
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
@@ -48,7 +47,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'amicleaner = amicleaner.cli:main',
+            'amicleaner = run:main',
         ],
     },
     tests_require=test_requirements,
